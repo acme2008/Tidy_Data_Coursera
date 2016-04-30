@@ -1,0 +1,13 @@
+# Variables used in the R script
+1.  train_x ,  train_y ,  train_subject contain the data from the "train" folder
+    test_x ,  test_y ,  test_subject contain the data from the "test" folder.
+2. Subject, Activity and Features merge the previous datasets using rbind
+3. "final" is an intermdiate dataset merging Subject,, Activity, Features, which labels the data set with descriptive variable names
+4. Tidy_Data is a second, independent tidy data set with the average of each variable for each activity and each subject
+
+# The tidy_data file contains 10299 observations with 81 variables divided in:
+1. subject: The ID of the test subject
+2. activity: The type of activity performed when the corresponding measurements were taken. There are six possible activities: WALKING, WALKING_UPSTAIRs, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+3. a 79-feature vector with time and frequency domain signal variables (numeric). ex: tbodyacc-mean-x, tbodyacc-mean-y etc...
+
+The original dataset and experiment an be found on the UCI page: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
